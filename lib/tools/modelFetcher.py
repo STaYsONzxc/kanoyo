@@ -8,43 +8,15 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-URL_BASE = "https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main"
+URL_BASE = "https://huggingface.co/kanoyo/0v2Super/resolve/main"
 models_download = [
-    (
-        "pretrained/",
-        [
-            "D32k.pth",
-            "D40k.pth",
-            "D48k.pth",
-            "G32k.pth",
-            "G40k.pth",
-            "G48k.pth",
-            "f0D32k.pth",
-            "f0D40k.pth",
-            "f0D48k.pth",
-            "f0G32k.pth",
-            "f0G40k.pth",
-            "f0G48k.pth",
-        ],
-    ),
     (
         "pretrained_v2/",
         [
-            "D32k.pth",
-            "D40k.pth",
-            "D48k.pth",
-            "G32k.pth",
-            "G40k.pth",
-            "G48k.pth",
-            "f0D32k.pth",
             "f0D40k.pth",
-            "f0D48k.pth",
-            "f0G32k.pth",
             "f0G40k.pth",
-            "f0G48k.pth",
         ],
     ),
-    ("", ["ffmpeg.exe", "ffprobe.exe"]),
 ]
 
 
@@ -55,10 +27,10 @@ individual_files = [
 ]
 
 folder_mapping = {
-    "pretrained/": "assets/pretrained/",
     "pretrained_v2/": "assets/pretrained_v2/",
     "": "",
 }
+
 
 
 def download_file_with_progress(url, destination_path):
