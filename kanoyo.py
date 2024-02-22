@@ -2493,13 +2493,13 @@ def GradioSetup():
                             )
                         sr2 = gr.Radio(
                             label=i18n("Target sample rate:"),
-                            choices=["40k", "48k", "32k"],
+                            choices=["40k"],
                             value="40k",
                             interactive=True,
                         )
                         version19 = gr.Radio(
                             label=i18n("Version:"),
-                            choices=["v1", "v2"],
+                            choices=["v2"],
                             value="v2",
                             interactive=True,
                             visible=True,
