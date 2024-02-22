@@ -1851,7 +1851,7 @@ def GradioSetup():
     default_weight = ""
 
     with gr.Blocks(theme='NoCrypt/miku', title="Kanoyo-RVC-Fork") as app:
-        gr.HTML("<h1> ❄️ K-RVC-Fork Colab & Kaggle Edition </h1>")
+        gr.HTML("<h1> 💜 Kanoyo (RVC WebUI) </h1>")
         gr.HTML(
             "<h3>Лучший Telegram-канал во всей вселенной — <a href='https://t.me/kanoyotelegram'>Присоединяйся!</a></h3>"
         )
