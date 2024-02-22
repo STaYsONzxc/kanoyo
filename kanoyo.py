@@ -2575,13 +2575,11 @@ def GradioSetup():
                                     "harvest",
                                     "mangio-crepe",
                                     "rmvpe",
-                                    "rmvpe_gpu",
                                 ]
                                 if config.dml == False
                                 else [
                                     "harvest",
                                     "rmvpe",
-                                    "rmvpe_gpu",
                                 ],
                                 value="rmvpe",
                                 interactive=True,
