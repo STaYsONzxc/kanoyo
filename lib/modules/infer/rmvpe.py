@@ -1,7 +1,6 @@
 from io import BytesIO
 import os
 
-from typing import List, Optional, Tuple
 import numpy as np
 import torch
 
@@ -20,6 +19,7 @@ import torch.nn.functional as F
 from librosa.util import normalize, pad_center, tiny
 from scipy.signal import get_window
 
+from typing import List, Optional, Tuple
 import logging
 
 logger = logging.getLogger(__name__)
